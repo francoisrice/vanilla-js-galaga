@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: no-repeat center center fixed;
+	background-size: cover;
+}
+
+#wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#game {
+	position: relative;
+	display: inline-grid;
+	background: black;
+}
+
+.game-status {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+	border: 5px darkgreen solid;
+	background: black;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+}
+
+#score {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 50px;
+	border: 5px darkgreen solid;
+	background: black;
+	margin-top: 20px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+}
+
+#start-button {
+	margin-top: 20px;
+}
+
+.hide {
+	display: none;
+}
+
+.square {
+	display: block;
+}
+
+.blank {
+	background: black;
+}
+
+.edge {
+	background: black;
+}
+
+.wall {
+	border: 1px solid green;
+}
+
+.playerbullet {
+	background: white;
+	border: 8px solid black;
+	border-radius: 50%;
+}
+
+.enemybullet {
+	background: green;
+	border: 8px solid black;
+	border-radius: 50%;
+}
+
+.enemy {
+	background: red;
+	border: none;
+	border-radius: 50%;
+	clip-path: polygon(
+		7px 0,
+		20px 0,
+		20px 6px,
+		13px 6px,
+		13px 14px,
+		20px 14px,
+		20px 20px,
+		13px 20px,
+		7px 20px,
+		7px 14px,
+		0 14px,
+		0 6px,
+		7px 6px
+	);
+	transform: rotate(180deg);
+}
+
+.player {
+	background: white;
+	border: none;
+	border-radius: 50%;
+	clip-path: polygon(
+		7px 0,
+		20px 0,
+		20px 6px,
+		13px 6px,
+		13px 14px,
+		20px 14px,
+		20px 20px,
+		13px 20px,
+		7px 20px,
+		7px 14px,
+		0 14px,
+		0 6px,
+		7px 6px
+	);
+}
